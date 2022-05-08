@@ -17,6 +17,23 @@ function newItem(assets, left, bottom ){
     })
        
 }
+function backGround(assets,left,bottom,width,hight){
+    let back = document.createElement('img')
+        back.src = assets;
+        back.style.position = 'fixed'
+        back.style.left = left + 'px'
+        back.style.bottom = bottom + 'px'
+        back.style.width = width + 'px'
+        back.style.height = hight + 'px'
+    document.body.append(back)
+return back
+
+}
+
+
+backGround('assets/sky.png', 0,0,1700,730)
+backGround('assets/grass.png', 0,0,1700,300)
+
 
 newImage('assets/green-character.gif', 100, 100)
 newImage('assets/pine-tree.png', 450, 200)
